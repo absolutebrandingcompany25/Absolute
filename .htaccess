@@ -1,0 +1,27 @@
+Options All -Indexes
+
+RewriteEngine on
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+#RewriteCond %{HTTP_HOST} ^www.absolutebrandingcompany.com [NC]
+#RewriteRule ^(.*)$ http://absolutebrandingcompany.com/$1 [L,R=301]
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+Redirect 301 /agencia-de-maketing /imagen-de-marca
+Redirect 301 /digitallab /marketing-digital-vigo
+Redirect 301 /eventos-formacion /organizacion-eventos-vigo
+Redirect 301 /contacto /contactar-agencia-marketing-vigo
+Redirect 301 /filosofia /agencia-publicidad-vigo
+Redirect 301 /terminos-marketing /consultora-marketing-vigo
+Redirect 301 /imagen-de-marca /branding
+Redirect 301 /identidad-marca /identidad-imagen-de-marca
+Redirect 301 /packaging /diseno-envases-packaging
+Redirect 301 /publicidad /publicidad-anuncios
+Redirect 301 /asesoria-marcas /asesora-consultora-marcas
+Redirect 301 /blog /blog-marketing-diseno-seo/
+Redirect 301 /redpapers /blog-marketing-diseno-seo/
+</IfModule>
+RewriteRule ^([a-zA-Z0-9/_-]+)$ index.php?views=$1
+RewriteRule ^([a-zA-Z0-9/_-]+)$ index.php?views=$1&views2=$2 [NC,L]
+
