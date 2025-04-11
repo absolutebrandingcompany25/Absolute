@@ -1,5 +1,5 @@
 <?php
-require_once 'core/configgeneral_org.php';
+require_once 'core/configgeneral.php';
 require_once './controller/controlvista.php';
 
 $plantilla = new controlvista();
