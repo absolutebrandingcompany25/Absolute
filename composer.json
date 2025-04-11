@@ -1,0 +1,13 @@
+{
+    "name": "jesuscampos/absolutebrandingcompany",
+    "description": "web de empresa",
+    "type": "project",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Jesus Miguel campos Correia"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
